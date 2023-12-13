@@ -1,0 +1,56 @@
+* {margin: 0;}
+
+header {display: hidden;}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#banner {
+    background: rgba(0,0,0,1);
+}
+
+.hbodies {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat important;
+    background-size: contain important;
+}
+
+#pl1 {
+    background: url(gifs/pl1.gif);
+    width: 190px;
+    height: 190px;
+    transform: translate(30vw,-5vh);
+    transition: 100s;
+}
+
+#pl2 {
+    background: url(gifs/pl2.gif);
+    width: 100px;
+    height: 100px;
+    animation-name: aquamotion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /* loop */
+}
+
+#twinklies {
+    font-size: large;
+    color: orange;
+    animation-name: staranimation;
+    animation-duration: 10;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes aquamotion {
+    from{transform: translate(-15vw,40vh);}
+    to{transform: translate(-3vw,-5vh);}
+}
+
+@keyframes staranimation {
+    from{visibility:hidden}
+    to{visibility:visible;}
+}
