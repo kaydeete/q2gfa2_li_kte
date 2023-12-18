@@ -8,6 +8,13 @@ section {
     display: block;
 }
 
+section#banner {
+    position: relative;
+    z-index: 80;
+}
+
+.pagetitle {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
 #banner {
     background: rgba(0,0,0,1);
 }
@@ -19,18 +26,28 @@ section {
     background-size: contain important;
 }
 
+.starbg {background: url(starbg.jpg);}
+
 #pl1 {
     background: url(gifs/pl1.gif);
-    width: 190px;
-    height: 190px;
-    transform: translate(30vw,-5vh);
-    transition: 100s;
+    width: 200px;
+    height: 200px;
+    float: right;
 }
 
 #pl2 {
     background: url(gifs/pl2.gif);
     width: 100px;
     height: 100px;
+    animation-name: aquamotion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /* loop */
+}
+
+#pl3 {
+    background: url(gifs/pl3.gif);
+    width: 200px;
+    height: 200px;
     animation-name: aquamotion;
     animation-duration: 5s;
     animation-iteration-count: infinite; /* loop */
