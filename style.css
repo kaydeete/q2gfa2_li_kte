@@ -2,11 +2,16 @@
 
 header {display: hidden;}
 
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 section {
     width: 100vw;
     height: 100vh;
     display: inline-block;
-    background: url(starbg.jpg);
+    background: url(starbg.jpg) !important;
 }
 
 section#banner {
@@ -14,10 +19,11 @@ section#banner {
     z-index: 80;
 }
 
-.pagetitle {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-#banner {
-    background: rgba(0,0,0,1);
+.banner h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: xx-large;
+    z-index: 100;
 }
 
 .hbodies {
@@ -29,16 +35,19 @@ section#banner {
 
 #pl1 {
     background: url(gifs/pl1.gif);
+    scale: 5;
     width: 200px;
     height: 200px;
-    float: right;
+    position: absolute;
+    bottom: 45vh;
+    right: 10vw;
 }
 
 #pl2 {
     background: url(gifs/pl2.gif);
     width: 100px;
     height: 100px;
-    animation-name: aquamotion;
+    animation-name: motion1;
     animation-duration: 5s;
     animation-iteration-count: infinite; /* loop */
 }
@@ -47,26 +56,34 @@ section#banner {
     background: url(gifs/pl3.gif);
     width: 200px;
     height: 200px;
-    animation-name: aquamotion;
+    animation-name: motion2;
     animation-duration: 5s;
     animation-iteration-count: infinite; /* loop */
 }
 
-#twinklies {
-    font-size: large;
-    color: orange;
-    animation-name: staranimation;
-    animation-duration: 10;
-    animation-iteration-count: infinite;
-    z-index: 1;
+#pl4 {
+    background: url(gifs/pl4.gif);
+    width: 100px;
+    height: 100px;
+    animation-name: motion3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /* loop */
+    position: absolute;
+    bottom: 50vh;
+    right: 50vw;
 }
 
-@keyframes aquamotion {
-    from{transform: translate(-15vw,40vh);}
-    to{transform: translate(-3vw,-5vh);}
+@keyframes motion1 {
+    from{transform: translate(-10vw,40vh);}
+    to{transform: translate(3vw,-5vh);}
 }
 
-@keyframes staranimation {
-    from{visibility:hidden}
-    to{visibility:visible;}
+@keyframes motion2 {
+    from{transform: translate(50vw,-40vh);}
+    to{transform: translate(15vw,12vh);}
+}
+
+@keyframes motion3 {
+    from {transform: rotate(120deg);}
+    to {transform: rotate(90deg)}
 }
