@@ -19,7 +19,7 @@ section#banner {
     z-index: 80;
 }
 
-.banner h1 {
+#banner h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size: xx-large;
