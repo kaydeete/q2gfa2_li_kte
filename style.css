@@ -5,7 +5,8 @@ header {display: hidden;}
 section {
     width: 100vw;
     height: 100vh;
-    display: block;
+    display: inline-block;
+    background: url(starbg.jpg);
 }
 
 section#banner {
@@ -25,8 +26,6 @@ section#banner {
     background-repeat: no-repeat important;
     background-size: contain important;
 }
-
-.starbg {background: url(starbg.jpg);}
 
 #pl1 {
     background: url(gifs/pl1.gif);
