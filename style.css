@@ -23,7 +23,7 @@ section#banner {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-size: xx-large;
-    z-index: 100;
+    z-index: 200;
 }
 
 .hbodies {
@@ -35,12 +35,15 @@ section#banner {
 
 #pl1 {
     background: url(gifs/pl1.gif);
-    scale: 5;
     width: 200px;
     height: 200px;
     position: absolute;
     bottom: 45vh;
     right: 10vw;
+    animation-name: motion4;
+    animation-iteration-count: infinite; /* loop */
+    animation-duration: 2s;
+    scale: 5;
 }
 
 #pl2 {
@@ -63,6 +66,7 @@ section#banner {
 
 #pl4 {
     background: url(gifs/pl4.gif);
+    scale: 2;
     width: 100px;
     height: 100px;
     animation-name: motion3;
@@ -73,17 +77,39 @@ section#banner {
     right: 50vw;
 }
 
+#pl5 {
+    background: url(gifs/pl5.gif);
+    width: 100px;
+    height: 100px;
+    animation-name: motion5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /* loop */
+    position: absolute;
+    bottom: 5vh;
+    right: 70vw;
+}
+
 @keyframes motion1 {
     from{transform: translate(-10vw,40vh);}
-    to{transform: translate(3vw,-5vh);}
+    to{transform: translate(20vw,-50vh);}
 }
 
 @keyframes motion2 {
     from{transform: translate(50vw,-40vh);}
-    to{transform: translate(15vw,12vh);}
+    to{transform: translate(-30vw,30vh);}
 }
 
 @keyframes motion3 {
     from {transform: rotate(120deg);}
     to {transform: rotate(90deg)}
+}
+
+@keyframes motion4 {
+    from {transform: skew(-0.06turn, 18deg);}
+    to {transform: skew(.312rad);}
+}
+
+@keyframes motion5 {
+    from {transform: scale(0.5) translate(-35vw,25vh);}
+    to {transform: scale(1.5) translate(20vw,-50vh);}
 }
