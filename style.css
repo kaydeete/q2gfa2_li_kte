@@ -128,3 +128,7 @@ section#banner {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 }
+
+/* lines 30-32 and 123-130 got from the link: https://www.w3schools.com/howto/howto_css_glowing_text.asp
+this is to make the text banner glowing pink
+*/
