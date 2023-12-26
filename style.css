@@ -116,8 +116,8 @@ section#banner {
 }
 
 @keyframes motion5 {
-    from {transform: scale(0.5) translate(-35vw,25vh);}
-    to {transform: scale(1.5) translate(20vw,-50vh);}
+    from {transform: scale(0.1) translate(-35vw,25vh);}
+    to {transform: scale(2.5) translate(20vw,-50vh);}
 }
 
 @-webkit-keyframes glow {
